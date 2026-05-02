@@ -1,0 +1,10 @@
+services:
+
+  mysql:
+    image: mysql:9.7.0
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: admin
+      MYSQL_DATABASE: snippetbox
+    ports:
+      - 3306:3306
